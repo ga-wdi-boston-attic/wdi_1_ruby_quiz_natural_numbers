@@ -14,5 +14,7 @@ describe "#multiples" do
 
   it "should return an array of natural numbers" do
     expect(multiples 3, 10).to eq [3, 6, 9]
+    expect(multiples 2, 8).to eq [2, 4, 6]
+    expect(multiples 5, 15).to eq [5, 10]
   end
 end
