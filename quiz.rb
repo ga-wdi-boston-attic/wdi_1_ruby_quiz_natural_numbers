@@ -1,12 +1,12 @@
-def multiples (multiple, max_num)
-num_array[0] = multiple.to_i
 
-	for i in 1..max_num
-		while num_array[i] <= multiple.to_i do
-	 	num_array[1] = multiple.to_i
-	 	num_array[i] = num_array[i - 1] + multiple.to_i
-	 end
+
+def multiples(multiple, max_num)
+	num_array = []
+	x = 0
+	while x * multiple < max_num - multiple do
+		num_array[ x ] = (x+1) * multiple
+		x += 1
 	end
-
-
+return num_array
 end
+
