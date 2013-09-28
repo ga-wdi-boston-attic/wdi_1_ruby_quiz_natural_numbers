@@ -20,12 +20,10 @@
 # end
 
 
-require 'pry'
-def multiple_spitter(multiple, max_number)
+def multiples(multiple, max_num)
 	multiple_array = [] 
-	multiple.upto(max_number) do |x|                                    
+	multiple.upto(max_num - 1) do |x|                                    
 	multiple_array << x if (x % multiple) == 0
 	end
 		return multiple_array
 end
-binding.pry
