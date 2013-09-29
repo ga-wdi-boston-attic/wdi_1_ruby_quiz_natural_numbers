@@ -1,20 +1,15 @@
 # Write a function called multiples that takes parameters called multiple and max_num.
 # The function should return an array of all the natural numbers below max_num that are multiples of multiple.
-# 'require pry'
 
-# def multiples(multiple, max_num)
+def multiples(multiple, max_num)
 # 	multiples = []
 # 	for x in 1...(max_num / multiple) do |x|
 # 		multiples << (multiple * x)
-# 	# if new < max_num
 # 	end
 # 	return multiples
 # end
 
-# multiples(4, 41)
-
-
-#####
+##### both of these methods work:
 def multiples(multiple, max_num)
 	multiples = []
 	multiple.upto(max_num - 1) do |value|
@@ -23,4 +18,4 @@ def multiples(multiple, max_num)
 	return multiples
 end
 
-multiples(4, 41)
+puts multiples(4, 41)
