@@ -1,14 +1,6 @@
 # Write a function called multiples that takes parameters called multiple and max_num.
 # The function should return an array of all the natural numbers below max_num that are multiples of multiple.
 
-def multiples(multiple, max_num)
-# 	multiples = []
-# 	for x in 1...(max_num / multiple) do |x|
-# 		multiples << (multiple * x)
-# 	end
-# 	return multiples
-# end
-
 ##### both of these methods work:
 def multiples(multiple, max_num)
 	multiples = []
@@ -19,3 +11,11 @@ def multiples(multiple, max_num)
 end
 
 puts multiples(4, 41)
+
+# def multiples(multiple, max_num)
+# # 	multiples = []
+# # 	for x in 1...(max_num / multiple) do |x|
+# # 		multiples << (multiple * x)
+# # 	end
+# # 	return multiples
+# # end
