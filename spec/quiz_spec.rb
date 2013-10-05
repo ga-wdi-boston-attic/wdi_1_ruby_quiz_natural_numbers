@@ -17,4 +17,5 @@ describe "#multiples" do
     expect(multiples 2, 8).to eq [2, 4, 6]
     expect(multiples 5, 15).to eq [5, 10]
   end
+
 end
