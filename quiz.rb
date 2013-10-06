@@ -11,10 +11,21 @@
 # - Turn in this quiz via a pull request on Github to the instructor.
 
 
+# def multiples(multiple, max_num)
+# 	natural_numbers = []
+# 	(multiple..max_num).each do |i|
+# 		natural_numbers << i if	max_num % mutiple == 0 
+# 	end
+# 	return natural_numbers
+# end
+
 def multiples(multiple, max_num)
-	natural_numbers = []
-	(multiple..max_num).each do |i|
-		natural_numbers << i if	max_num % mutiple == 0 
+	mutiple_array = []
+	# Something goes here
+	multiple.upto(max_num - 1) do |value|
+		mutiple_array << value if (value % multiple) == 0
 	end
-	return natural_numbers
+	return mutiple_array
+
 end
+mutiple_array(3)
