@@ -28,4 +28,4 @@ def multiples(multiple, max_num)
 	return mutiple_array
 
 end
-mutiple_array(3)
+multiple_array(3)
