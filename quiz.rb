@@ -9,5 +9,3 @@ def multiples(multiple, max_num)
 
   result_array
 end
-
-puts multiples(3, 13)
