@@ -1,3 +1,5 @@
+require 'pry'
+
 def multiples(multiple, max_num)
 	numbers = []
 	base_num = multiple
@@ -8,4 +10,9 @@ def multiples(multiple, max_num)
 	return numbers
 end
 
-puts multiples(25, 100)
+#puts multiples(25, 100)
+
+#prints with indexes
+multiples(5, 100).each_with_index do |multiple, index|
+	puts "#{index}: #{multiple}"
+end
