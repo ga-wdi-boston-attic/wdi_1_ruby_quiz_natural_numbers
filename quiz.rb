@@ -1,11 +1,7 @@
 def multiples(multiple, max_num)
-  result_array = []
-  multiplier = 1
-
-  while (multiple * multiplier) < max_num
-    result_array << multiple * multiplier
-    multiplier += 1
+  result_array = (multiple...max_num).to_a
+  result_array.delete_if do |item|
+    item % multiple != 0
   end
-
-  result_array
 end
+
